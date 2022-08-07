@@ -69,6 +69,7 @@ header ul {
 .active[data-tab-content]{
     display: block;
     width: 100%;
+    min-width: 100vw;
     min-height: 80vh;
     padding-inline: 5%;
 }
