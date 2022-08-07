@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/0fc7a035b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Task</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li data-tab-target="#checkout-steps" class="active tab">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span>Checkout Steps</span>
+        </li>
+          <li class="tab" data-tab-target="#display-settings">
+            <i class="fa-solid fa-tv"></i>
+            <span>Display Settings</span>
+          </li>
+           <li class="tab" data-tab-target="#advance-settings">
+            <i class="fa-solid fa-gear"></i>
+            <span>Advance Settings</span>
+           </li>
+          <li class="tab" data-tab-target="#button-settings">
+            <i class="fa-regular fa-hand-pointer"></i>
+            <span>Button Settings</span>
+          </li>
+          <li class="tab" data-tab-target="#plugin-license">
+            <i class="fa-solid fa-key"></i>
+            <span>Plugin License</span>
+          </li>
+           
+      </ul>
+    </header>
+
+    <div class="tab-content">
+        <div data-tab-content id="checkout-steps" class="active">
+          
+        </div>
+        <div data-tab-content id="display-settings">
+          <h1>display settings</h1>
+        </div>
+        <div data-tab-content id="advance-settings">
+          <h1>advance settings</h1>
+        </div>
+        <div data-tab-content id="button-settings">
+          <h1>button settings</h1>
+        </div>
+        <div data-tab-content id="plugin-license">
+          <h1>plugin License</h1>
+        </div>
+    </div>
+      <div id="modal">
+        <div class="modal-header">
+          <span class="modal-title"></span>
+          <i id="close" class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="modal-body">
+          <div class="first-section">
+            <span >Enabled</span>
+            <!-- toggle switch -->
+
+              <input type="checkbox" name="enable step" id="enable-step" class="switch_2">
+              <label for="enable-step">Toggle</label>
+          </div>
+          <div class="input-section">
+            <div class="first">
+              <span class="input-label">Name</span>
+              <input placeholder="Enter name" type="text" id="input-1">
+            </div>
+            <div class="second">
+              <span class="input-label">Step Title</span>
+              <input placeholder="Enter step title" type="text" id="input-2">
+            </div>
+          </div>
+          <div class="second-section">
+            <span class="action_hook">Action Hook Name : <span class="hook-name">avfdrtc_woocomerce_demo_cart_step</span></span>
+            <i class="fa-regular fa-copy"></i>
+          </div>
+          <div class="third-section">
+            <span>Index Type</span>
+            <div class="checkBox">
+              <div class="check-1">
+               <input type="radio" name="check" id="check-1">
+                <span>Text Index</span>
+              </div>
+              <div class="check-2">
+                <input type="radio" name="check" id="check-2">
+                <span>Icon Index</span>
+              </div>
+            </div>
+            <div class="upload-button">
+              <input type="file" name="" id="upload">
+              <div>
+                <div>
+                  <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <span>Upload a file</span>
+              </div>
+            </div>
+          </div>
+          <div class="fourth-section">
+            <span>Enable Content Settings</span>
+
+            <input type="checkbox" name="enabled" id="content-settings" >
+            <label for="content-settings">Toggle</label>
+
+          </div>
+          <div class="color-input-section">
+            <div class="first-picker">
+              <span class="input-label">Current Background Color</span>
+             <div>
+              <input type="color" id="color-input-1" value="#ffff">
+              <span id="hex-code-1"></span>
+             </div>
+            </div>
+            <div class="second-picker">
+              <span class="input-label">Content Font Color</span>
+              <div>
+                <input type="color"  id="color-input-2">
+                <span id="hex-code-2"></span>
+              </div>
+            </div>
+          </div>
+          <div class="fifth-section">
+            <span>Custom Content</span>
+            <input type="text" id="custom-content">
+          </div>
+          <div class="sixth_section">
+            <span>Display Position</span>
+              <select name="position" id="position">
+                <option value="above">Above the default fields</option>
+                <option value="below">Below the default fields</option>
+              </select>
+          </div>
+          <div class="button-section">
+            <div class="reset">
+              
+            </div>
+            <div class="save">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script src="main.js"></script>
+</html>
